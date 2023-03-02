@@ -41,6 +41,18 @@ h1{
     
 }
 
+.legend{
+    text-align: center;
+}
+
+#button{
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    background-color: aqua;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
 @media only screen and (min-width:768px) {
     .header{
         justify-content:space-between ;
@@ -54,7 +66,8 @@ h1{
     #img1{
         float: right;
         width: 35rem;
-        height: 23rem;
+        height: 24.5rem;
+        height: 24.5rem;
         border: 1px solid;
         /* margin-left:12rem; */
     }
@@ -65,5 +78,9 @@ h1{
 
     #p1{
         font-size: 1.6rem;
+    }
+
+    .legend{
+        font-size: 1.2rem;
     }
 }

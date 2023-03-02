@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,15 +8,17 @@
     <title>ES6 javascript BMI converter</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<header class="header" >
- <h1>ES6 javascript BMI converter</h1> <img id="mylogo" src="./image/h3e6H.jpg" alt="my logo">
-</header>
-     
-    <p id="p1" >This is a web of BMI(Body-Mass-Index) converter: <p>
-     
+    <header class="header">
+        <h1>ES6 javascript BMI converter</h1> <img id="mylogo" src="./image/h3e6H.jpg" alt="my logo">
+    </header>
+
+    <p id="p1">This is a web of BMI(Body-Mass-Index) converter:
+    <p>
+
         <img src="./image/bmi-chart-for-adults.jpg" id="img1" alt="image of BMI">
-    <ol id="para" >
+    <ol id="para">
         <li>In this web 1st you enter your height in Feet and inch.</li>
         <li>Then enter your weight in KG.</li>
         <li>After enter all instruction you get your result of your Body-Mass-Index.</li>
@@ -23,22 +26,60 @@
     </ol>
 
     <hr>
-    
-      <p id="p1">BMI Categories:</p>
-    <P id="para"> 
-        Underweight = < 18.5 <br>
-        Normal weight = 18.5 – 24.9 <br>
-        Overweight = 25 – 29.9 <br>
-        Obesity = BMI of 30 or greater 
-    </P>
-        <ul id="para" >
-            <li>Healthy BMI range: 18.5 kg/m<sup>2</sup>- 25 kg/m<sup>2</sup> </li>
-        </ul>
 
-<footer class="footer">
-    &copy;Web and App Developer:Muhammad Khubaib <br>
-    <a href="https://github.com/MKQazi786">Github/MKQazi786</a>
-</footer>
-    
+    <p id="p1">BMI Categories:</p>
+    <P id="para">
+            Underweight = < 18.5 <br>
+            Normal weight = 18.5 – 24.9 <br>
+            Overweight = 25 – 29.9 <br>
+            Obesity = BMI of 30 or greater
+    </P>
+    <ul id="para">
+        <li>Healthy BMI range: 18.5 kg/m<sup>2</sup>- 25 kg/m<sup>2</sup> </li>
+    </ul>
+
+    <hr>
+
+    <legend class="legend">
+
+
+        <form action="onsubmit">
+
+            <h2 id="p1"> Enter your info here to get result; </h2>
+
+            <label for="heightInputFeet">
+                Your Height:
+            </label>
+
+            <input required step="1" type="number" id="heightInputFeet" min="0" max="10" placeholder="Feet">
+            &
+            <input required step="1" type="number" id="heightInputInch" min="0" max="11" placeholder="Inch">
+            <br>
+
+            <label for="weightInputKg">
+                Your Weight:
+            </label>
+
+            <input required step="0.1" type="number" id="weightInputKg" placeholder="In Kg" min="0" max="136">
+
+            <br>
+
+            <button id="button" type="submit"> Calculate </button>
+
+        </form>
+
+    </legend>
+
+    <footer class="footer">
+        &copy;Web and App Developer:Muhammad Khubaib <br>
+        <a href="https://github.com/MKQazi786">Github/MKQazi786</a>
+    </footer>
+
+
+
+
+
+    <script src="BMI.js"></script>
 </body>
+
 </html>
